@@ -13,9 +13,32 @@ while(again.ToLower() == "a")
     Console.WriteLine("**********výpis řady*********");
     Console.WriteLine("*****************************");
 
-    //vstup počáteční hodnoty
-    
+    //načtení počáteční hodnoty
+    Console.Write("Zadejte první číslo řady (kladné celé číslo): ");
+    int first;
+    // ! znamená negace 
+    while(!int.TryParse(Console.ReadLine(), out first))
+    {
+        Console.Write("Nezadali jste kladné celé číslo. Zadejte první číslo řady znovu: ");
+    }
+        
+    // načtení koncové hodnoty řady
+    Console.Write("Zadejte poslední číslo řady (kladné celé číslo): ");
+    int last;
+    // ! znamená negace 
+    while(!int.TryParse(Console.ReadLine(), out last))
+    {
+        Console.Write("Nezadali jste kladné celé číslo. Zadejte poslední číslo řady znovu: ");
+    }
 
+    //načtení diference s kontrolou kladného čísla
+    Console.Write("Zadejte diferenci (kladné celé číslo): ");
+    int step;
+    // ! znamená negace 
+    while(!int.TryParse(Console.ReadLine(), out step) || step <=0 )
+    {
+        Console.Write("Nezadali jste kladné celé číslo. Zadejte difenenci znovu: ");
+    }
 
 
 
