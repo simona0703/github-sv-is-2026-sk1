@@ -5,6 +5,15 @@
 // jakýkoli jiný vstup program ukončí
 while(again.ToLower() == "a")
 {
+    //hlavička programu Console.Clear -> vymazání obrazovky
+    Console.Clear();
+    Console.WriteLine("*****************************");
+    Console.WriteLine("********Simona Veselá********");
+    Console.WriteLine("*****************************");
+    Console.WriteLine("**********výpis řady*********");
+    Console.WriteLine("*****************************");
+
+    //vstup počáteční hodnoty
     
 
 
