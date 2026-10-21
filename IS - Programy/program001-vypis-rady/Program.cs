@@ -13,6 +13,10 @@ while(again.ToLower() == "a")
     Console.WriteLine("**********výpis řady*********");
     Console.WriteLine("*****************************");
 
+    //vstup počáteční hodnoty špatně řešený
+    //Console.Write("Zadejte první číslo řady");
+    //int first = int.Parse(Console.ReadLine());
+
     //načtení počáteční hodnoty
     Console.Write("Zadejte první číslo řady (kladné celé číslo): ");
     int first;
